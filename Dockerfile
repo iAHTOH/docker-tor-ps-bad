@@ -16,7 +16,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 USER tor
 VOLUME /var/lib/tor
 CMD ["tor", "-f", "/tmp/torrc"]
-CMD ["privoxy", "--user privoxy", "/tmp/privoxy"]
+#CMD ["privoxy", "--user privoxy", "/tmp/privoxy"]
 
 # https://github.com/opencontainers/image-spec/blob/v1.0.1/annotations.md
 ARG REVISION="0.0.1"
