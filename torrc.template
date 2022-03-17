@@ -3,11 +3,9 @@ Log notice stdout
 # default: ~/.tor
 DataDirectory /var/lib/tor
 
-# Политика подключений (*разрешено все IP)
-SocksPolicy accept * 
-# Прослушиваемый порт и IP адрес (все) 
-SocksPort 0.0.0.0:{LISTING_PORT}
 
+# Прослушиваемый порт и IP адрес (все) 
+SocksPort 127.0.0.1:9050
 ## Настройка моста
 ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 Bridge {OBFS4_ADR}
