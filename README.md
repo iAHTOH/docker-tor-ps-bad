@@ -1,1 +1,1 @@
-# tor-proxy
+# tor-ps
