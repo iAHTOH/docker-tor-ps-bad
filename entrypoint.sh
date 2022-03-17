@@ -9,6 +9,7 @@ set -x
 
 sed -e "s#{LISTING_PORT}#$LISTING_PORT#" \
     -e "s#{OBFS4_ADR}#$OBFS4_ADR#" \
-     /torrc.config >/tmp/torrc
+     /torrc.config >/tmp/torrc\
+     /privoxy.config >/tmp/privoxy
 
 exec "$@"
