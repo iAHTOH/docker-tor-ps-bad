@@ -9,6 +9,6 @@ set -x
 
 sed -e "s#{LISTING_PORT}#$LISTING_PORT#" \
     -e "s#{OBFS4_ADR}#$OBFS4_ADR#" \
-     /torrc.template >/tmp/torrc
+     /torrc.config >/tmp/torrc
 
 exec "$@"
